@@ -1,7 +1,7 @@
 using System;
 public class OneMassive
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
         int[] array = RndOrHands();
         GetAverage(int[] array);
@@ -20,7 +20,7 @@ public class OneMassive
             }
         }
     }
-    public static void RndFill()
+    public void RndFill()
     {
         Random rnd = new Random;
         int[] array = new int[rnd];
@@ -30,7 +30,7 @@ public class OneMassive
         }
     }
 
-    public static void FillByUser()
+    public void FillByUser()
     {
         Console.WriteLine("Введите количество элементов массива");
         int n = Console.ReadLine();
@@ -74,7 +74,7 @@ public class OneMassive
         }
     }
     
-    public void GetNonDuplicates(int[] array)
+    public int GetNonDuplicates(int[] array)
     {
         int[] NonDuplicates = new int[];
         nonduplicatesindex = 0;
@@ -263,7 +263,7 @@ public class ThreeMassive
         Console.Writeline();
     
     }
-    public static int ModifyElements(int[][] jArray)
+    public int ModifyElements(int[][] jArray)
     {
         for (int i = 0; i < jArray.Length; i++)
         {
